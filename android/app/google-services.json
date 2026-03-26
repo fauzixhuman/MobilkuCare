@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "983466129454",
+    "project_id": "mobilku-care",
+    "storage_bucket": "mobilku-care.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983466129454:android:3bd2c265850e74e3d947bf",
+        "android_client_info": {
+          "package_name": "com.example.mobilku_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCztZ2CDWl79OYc3BpYyHpN8ngkFXu6CGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

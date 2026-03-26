@@ -1,0 +1,62 @@
+﻿Running Gradle task 'assembleDebug'...                          
+flutter : 
+At line:1 char:1
++ flutter build apk 
+--debug 2>&1 | Out-File 
+-FilePath build_log.txt 
+-En ...
++ ~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo       
+       : NotSpecified:   
+  (:String) [], Remote   
+ Exception
+    + FullyQualifiedErro 
+   rId : NativeCommandE  
+  rror
+ 
+FAILURE: Build failed 
+with an exception.
+
+* What went wrong:
+Execution failed for 
+task ':app:checkDebugAarM
+etadata'.
+> A failure occurred 
+while executing com.andro
+id.build.gradle.internal.
+tasks.CheckAarMetadataWor
+kAction
+   > An issue was found 
+when checking AAR 
+metadata:
+
+       1.  Dependency ':f
+lutter_local_notification
+s' requires core library 
+desugaring to be enabled
+           for :app.
+
+           See https://de
+veloper.android.com/studi
+o/write/java8-support.htm
+l for more
+           details.
+
+* Try:
+> Run with --stacktrace 
+option to get the stack 
+trace.
+> Run with --info or 
+--debug option to get 
+more log output.
+> Run with --scan to get 
+full insights.
+> Get more help at 
+https://help.gradle.org.
+
+BUILD FAILED in 2s
+Running Gradle task 'assembleDebug'...                              3.3s
+Gradle task 
+assembleDebug failed 
+with exit code 1

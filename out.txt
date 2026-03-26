@@ -1,0 +1,29 @@
+﻿Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  matcher 0.12.17 (0.12.18 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.17.0 (1.18.1 available)
+  test_api 0.7.7 (0.7.9 available)
+  timezone 0.10.1 (0.11.0 available)
+Got dependencies!
+6 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing mobilku_app...                                        
+
+   info - Don't invoke 'print' in production code - lib\providers\dashboard_provider.dart:30:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\providers\dashboard_provider.dart:55:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\providers\dashboard_provider.dart:79:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\providers\dashboard_provider.dart:101:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\providers\dashboard_provider.dart:115:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\providers\dashboard_provider.dart:150:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\screens\dashboard_screen.dart:18:28 - use_build_context_synchronously
+  error - The name 'ActivityEntryScreen' isn't a class - lib\screens\dashboard_screen.dart:73:41 - creation_with_non_type
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\dashboard_screen.dart:248:39 - deprecated_member_use
+  error - The method 'read' isn't defined for the type 'BuildContext' - lib\screens\history_screen.dart:30:30 - undefined_method
+   info - Don't invoke 'print' in production code - lib\screens\history_screen.dart:49:7 - avoid_print
+warning - Unused import: 'activity_entry_screen.dart' - lib\screens\main_screen.dart:5:8 - unused_import
+warning - Unused import: '../providers/dashboard_provider.dart' - lib\screens\main_screen.dart:6:8 - unused_import
+warning - Unused import: 'package:provider/provider.dart' - lib\screens\main_screen.dart:7:8 - unused_import
+  error - The name 'MyApp' isn't a class - test\widget_test.dart:16:35 - creation_with_non_type
+
