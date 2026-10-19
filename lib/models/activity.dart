@@ -4,6 +4,7 @@ class Activity {
   final bool isWaxBody;
   final bool isWaxGlass;
   final bool isVacuum;
+  final String note;
   final DateTime createdAt;
 
   Activity({
@@ -12,6 +13,7 @@ class Activity {
     required this.isWaxBody,
     required this.isWaxGlass,
     required this.isVacuum,
+    this.note = '',
     required this.createdAt,
   });
 
@@ -29,6 +31,7 @@ class Activity {
       isWaxBody: json['is_wax_body'] == 1 || json['is_wax_body'] == true,
       isWaxGlass: json['is_wax_glass'] == 1 || json['is_wax_glass'] == true,
       isVacuum: json['is_vacuum'] == 1 || json['is_vacuum'] == true,
+      note: json['note']?.toString() ?? '',
       createdAt: parsedDate,
     );
   }

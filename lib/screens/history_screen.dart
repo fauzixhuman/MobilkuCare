@@ -163,6 +163,22 @@ class _HistoryScreenState extends State<HistoryScreen> {
                         '${activity.createdAt.day}/${activity.createdAt.month}/${activity.createdAt.year}',
                         style: const TextStyle(color: Colors.white38, fontSize: 12),
                       ),
+                      if (activity.note.isNotEmpty) ...[
+                        const SizedBox(height: 6),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Icon(Icons.sticky_note_2_outlined, color: Colors.amber, size: 14),
+                            const SizedBox(width: 4),
+                            Expanded(
+                              child: Text(
+                                activity.note,
+                                style: const TextStyle(color: Colors.amber, fontSize: 12),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ],
                   ),
                 ),

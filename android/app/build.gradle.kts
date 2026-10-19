@@ -34,6 +34,20 @@ android {
         versionName = "1.0.0"
     }
 
+    signingConfigs {
+        create("release") {
+            val customKeystore = file("app.keystore")
+            if (customKeystore.exists()) {
+                keyAlias = "androiddebugkey"
+                keyPassword = "android"
+                storeFile = customKeystore
+                storePassword = "android"
+            } else {
+                initWith(signingConfigs.getByName("debug"))
+            }
+        }
+    }
+
     buildTypes {
         release {
             // Enable R8 shrinking for smaller APK
@@ -43,7 +57,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 }

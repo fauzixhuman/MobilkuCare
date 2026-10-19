@@ -12,7 +12,20 @@
           "package_name": "com.example.mobilku_app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "983466129454-vccet6q8faf6njeqf0oitpa87voa8rbb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobilku_app",
+            "certificate_hash": "624decc04392da104d8a5c571753dd4ae8179685"
+          }
+        },
+        {
+          "client_id": "983466129454-mrrh34cpeep12ebj3l5rmnffqvp25t5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCztZ2CDWl79OYc3BpYyHpN8ngkFXu6CGw"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983466129454-mrrh34cpeep12ebj3l5rmnffqvp25t5t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "983466129454-b51io4rnpulvncmjl4r34n079a0k386d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mobilkuApp"
+              }
+            }
+          ]
         }
       }
     }
